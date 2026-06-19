@@ -1,12 +1,10 @@
 import re
 
-def mostrar_bienvenida():
-    """Muestra un mensaje de bienvenida."""
-    print("¡Bienvenido al sistema de funciones!")
+def mostrar_bienvenida(): #Muestra un mensaje de bienvenida
+    print("Bienvenido al sistema de funciones")
 
 
-def calcular_promedio(num1, num2):
-    """Recibe dos números y devuelve su promedio."""
+def calcular_promedio(num1, num2): # Recibe dos números y devuelve su promedio
     return (num1 + num2) / 2
 
 
