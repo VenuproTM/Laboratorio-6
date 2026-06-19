@@ -1,42 +1,28 @@
 # Laboratorio 6 - Fundamentos de Programación
 
-**Integrante:** Pablo Diaz
+**Integrante:** Edith Huingo
 
 ## Tema: Introducción a la Programación Modular y Reutilización
 
-Este repositorio contiene mi parte del **Laboratorio 6**. Me encargué de realizar la **Parte 3 (Integración)** y la **Parte 4 (Buenas Prácticas)** de la guía, mejorando el código base que hicimos en grupo.
+Yo me encargué de **ejecutar el programa principal y verificar el correcto funcionamiento de cada función**, asegurándome de que todo lo implementado funcione sin errores.
 
----
+### ¿Qué hice?
 
-## ¿Qué mejoras le hice al código?
+* **Probé todas las opciones del menú** una por una: Suma, Promedio, Resta, Validar Correo y Salida.
+* **Probé casos válidos:** Números correctos y correos electrónicos reales.
+* **Probé casos inválidos:** Letras en lugar de números y cadenas sin formato de correo.
+* **Verifiqué el manejo de errores:** Comprobé que el `try-except` atrapa correctamente entradas incorrectas sin que el programa se cierre.
+* **Documenté los resultados** en una tabla comparativa con entradas, salidas esperadas y salidas obtenidas.
 
-### Parte 3: Integración y nuevas funciones
-* **Menú Interactivo:** Le agregué un ciclo `while True` en el `main.py` para crear un menú de opciones. Así podemos probar todas las operaciones sin que el programa se cierre a cada rato.
-* **Nuevas operaciones:** Agregué las funciones `calcular_suma` y `calcular_resta` en el archivo auxiliar para demostrar lo fácil que es agregar cosas a un proyecto modular.
+### Resultados de las pruebas
 
-### Parte 4: Buenas Prácticas
-* **Comentarios profesionales (Docstrings):** Cambié los comentarios básicos por *Docstrings* (`\"\"\"`) en todas las funciones de `utilidades.py`. Ahora cada función explica claramente qué hace, qué parámetros necesita y qué devuelve.
-* **Manejo de errores (try-except):** Agregué validaciones para que si el usuario escribe letras en lugar de números, el programa muestre un mensaje de error amigable (`ValueError`) en lugar de cerrarse de golpe.
-* **Buenas prácticas de ejecución:** Metí el código principal dentro de una función `def main():` y usé `if __name__ == "__main__":` para seguir los estándares de Python.
+| Función | Entrada | Salida esperada | Salida obtenida | Estado |
+| :--- | :--- | :--- | :--- | :--- |
+| `calcular_suma(5, 3)` | 5, 3 | 8.0 | 8.0 | Correcto |
+| `calcular_promedio(8, 4)` | 8, 4 | 6.0 | 6.0 | Correcto |
+| `calcular_resta(10, 3)` | 10, 3 | 7.0 | 7.0 | Correcto |
+| `validar_correo("user@example.com")` | user@example.com | VÁLIDO | VÁLIDO | Correcto |
+| `validar_correo("hola")` | hola | INVÁLIDO | INVÁLIDO | Correcto |
+| Manejo de error (letras en número) | abc | Mensaje de error | "Debe ingresar únicamente números." | Correcto |
 
----
-
-##  Archivos del proyecto
-
-* `main.py`: Es el archivo principal que ejecutamos. Tiene el menú y valida los errores.
-* `utilidades.py`: Es el archivo "módulo" donde guardamos todas las operaciones matemáticas y de validación.
-
----
-
-##  Tabla de Funciones
-
-Estas son las funciones que tenemos listas en nuestro archivo `utilidades.py`:
-
-| Función | Parámetros | Retorno | ¿Qué hace? |
-| :--- | :--- | :--- | :--- |
-| `mostrar_bienvenida()` | Ninguno | `None` | Muestra el saludo inicial. |
-| `calcular_suma(num1, num2)` | 2 números (`float`) | `float` | Suma los dos números ingresados. |
-| `calcular_resta(num1, num2)` | 2 números (`float`) | `float` | Resta los dos números ingresados. |
-| `calcular_promedio(num1, num2)`| 2 números (`float`) | `float` | Calcula el promedio de los dos números. |
-| `validar_correo(correo)` | 1 texto (`str`) | `bool` | Revisa si el texto ingresado tiene un formato válido de correo usando regex. |
-"""
+Todas las funciones se ejecutaron correctamente, lo que confirma que la implementación modular es sólida y que cada función hace exactamente lo que debe hacer, incluso cuando el usuario ingresa datos inesperados. 
