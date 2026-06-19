@@ -1,4 +1,4 @@
-readme_content = """# Laboratorio 6 - Fundamentos de Programación
+# Laboratorio 6 - Fundamentos de Programación
 
 **Integrante:** Pablo Diaz
 
@@ -8,7 +8,7 @@ Este repositorio contiene mi parte del **Laboratorio 6**. Me encargué de realiz
 
 ---
 
-## 🛠️ ¿Qué mejoras le hice al código?
+## ¿Qué mejoras le hice al código?
 
 ### Parte 3: Integración y nuevas funciones
 * **Menú Interactivo:** Le agregué un ciclo `while True` en el `main.py` para crear un menú de opciones. Así podemos probar todas las operaciones sin que el programa se cierre a cada rato.
@@ -40,8 +40,3 @@ Estas son las funciones que tenemos listas en nuestro archivo `utilidades.py`:
 | `calcular_promedio(num1, num2)`| 2 números (`float`) | `float` | Calcula el promedio de los dos números. |
 | `validar_correo(correo)` | 1 texto (`str`) | `bool` | Revisa si el texto ingresado tiene un formato válido de correo usando regex. |
 """
-
-with open("README-v2.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print("File generated successfully as README-v2.md")
