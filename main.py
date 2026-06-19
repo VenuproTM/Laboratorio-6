@@ -30,6 +30,8 @@ def main():
             except ValueError:
                 print("Error: Debe ingresar únicamente números.")
         
+        # Verifica si una cadena de texto es un correo electrónico válido.
+
         elif opcion == "4":
             correo = input("Ingrese un correo electrónico: ")
             if validar_correo(correo):
