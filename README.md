@@ -1,4 +1,4 @@
-# Laboratorio 5 - Fundamentos de Programación
+# Laboratorio 6 - Fundamentos de Programación
 ## Tema: Introducción a la programación modular y reutilización
 ### Integrante: [Fabrizio Ortega]
 - Este archivo contiene mi parte del trabajo: 
